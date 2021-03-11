@@ -2,11 +2,11 @@
 CC=gcc
 CFLAGS=-Wall -o
 
-main: todo.o helper.o
-	$(CC) todo.o helper.o
-todo.o: todo.c
+todo.o: todo.c helper.o
 	$(CC) $(CFLAGS) todo.o todo.c
-helper.o: helper.h helper.c
-	$(CC) $(CFLAGS) helper.o helper.c
+
+helper.o: helper.h
+	$(CC) $(CFLAGS) helper.o helper.h
+
 clean:
 	rm *.o

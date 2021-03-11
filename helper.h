@@ -1,12 +1,20 @@
 // Libraries
+#include "stdio.h"
+#include "stdio.h"
 #include "stdlib.h"
-#include "helper.c"
+#include "string.h"
 
-// Defenitions
+// defenition
 #define MAXLEN 100
 
-// Typedefs
-typedef struct elem elem_t;
+// typedefs
+struct elem {
+	char job[MAXLEN];
+	int id;
+	int status;
+};
 
-// Functions
-void intro();
+// functions
+void intro(){
+        printf("TODO:");
+}
